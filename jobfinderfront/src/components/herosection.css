@@ -1,0 +1,178 @@
+.herosection--container{
+    width: 100%;
+    height: 700px;
+    /* background: linear-gradient(to top, rgba(255, 255, 255, 0.7), rgba(171, 34, 102, 0.3));
+   */
+   background-color: white;
+    display: flex;
+    justify-content: center;
+}
+.hero--container {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    width: 70%;
+    height: 100%;
+   
+    
+}
+
+
+.hero--left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50%;
+    max-width: 50%;
+    margin-left: 20px; ;
+}
+.hero--right{
+
+background-image: url('../../public/images/ONZ74P0.jpg');
+background-repeat: no-repeat;
+background-size: contain;
+min-width: 400px;
+min-height: 50%;
+border-radius: 10px;
+
+}
+.hero--text{
+    position: relative;
+    width: 100%;
+    text-align: left;
+}
+.hero--text h1{
+    width: 80%;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0;
+    position: relative;
+}
+.hero--text .line {
+    width: 90px;
+    height: 8px;
+    background:#E91E63;
+    position: absolute;
+    top: 30%; /* Position the line in the middle of the column */
+    left: 0;
+    border-radius: 50px;
+    transform: translateY(-50%); /* Vertically center the line */
+  }
+.hero--text span{
+    width: 80%;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #E91E63;
+    
+}
+.hero--text p{
+    font-size: 1rem;
+    font-family: 500;
+}
+.hero--buttons {
+    position: relative;
+    height: 100%;
+    display: flex;
+    width: 100%;
+    
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+
+
+
+  .hero--buttons--primary {
+    position: relative;
+    background: transparent; /* Set a transparent background */
+    border: 2px solid #E91E63;
+    cursor: pointer;
+    min-width: 150px;
+    text-align: center;
+    height: 35px;
+    font-size: 17px;
+    transition: 0.5s;
+    color: black; /* Default text color */
+    z-index: 1;
+    font-weight: 500;
+    border-radius: 2px;
+}
+
+.hero--buttons--primary::before {
+    
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10%; /* Initially, set the width to 0 to hide the background */
+    height: 100%;
+    background: #E91E63; /* Background color for the pseudo-element */
+    transition: 0.5s;
+    z-index: -1; /* Move the background behind the text */
+}
+
+.hero--buttons--primary:hover::before {
+    width: 100%; /* Show the background on hover */
+}
+
+.hero--buttons--primary:hover {
+    color: white; /* Change the text color on hover */
+}
+
+.hero--buttons--secondary {
+    border-radius: 2px;
+    position: relative;
+    background: transparent; /* Set a transparent background */
+    border: 2px solid #E91E63;
+    cursor: pointer;
+    min-width: 150px;
+    text-align: center;
+    height: 35px;
+    font-size: 17px;
+    transition: 0.5s;
+    color: white; /* Default text color */
+    z-index: 1;
+    font-weight: 500;
+}
+
+.hero--buttons--secondary::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%; /* Initially, set the width to 0 to hide the background */
+    height: 100%;
+    background: #E91E63; /* Background color for the pseudo-element */
+    transition: 0.5s;
+    z-index: -1; /* Move the background behind the text */
+}
+
+.hero--buttons--secondary:hover::before {
+    width: 10%; /* Show the background on hover */
+}
+
+.hero--buttons--secondary:hover {
+    color: black; /* Change the text color on hover */
+}
+
+@keyframes cursor{
+    50%{
+        border-color: transparent;
+    }
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 110%;
+    }
+}

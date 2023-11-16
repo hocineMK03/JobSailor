@@ -1,0 +1,109 @@
+.resume {
+    width: 80%;
+    margin: auto;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .resume--form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .resume--progressbar {
+    width: 400px;
+    display: flex;
+    height: 20px;
+    background-color: black;
+    border-radius: 7px;
+  }
+  
+  .resume--progressbar div {
+    height: 100%;
+    background-color: #e91e63;
+    border-radius: 7px;
+    transition: all 0.3s cubic-bezier(0.23, 0.35, 0.82, 0.76);
+  }
+  
+  .resume--container {
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .resume--header {
+    text-align: center;
+    padding: 20px;
+    background-color: #e91e63;
+    color: white;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .resume--body {
+    padding: 20px;
+  }
+  
+  .resume--buttons {
+    margin: 20px;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .resume--body input{
+    padding: 20px;
+    background-color: #f0f0f0;
+    min-width: 80%;
+    border-radius: 10px;
+    text-align: start;
+    border: none;
+    outline: none;
+    transition: all 0.2s ease-out;
+    border: 1px solid transparent;
+    }
+    .resume--body input:focus{
+        animation: animatedinput 1s cubic-bezier(.23,.35,.82,.76);
+        
+        
+    }
+  .resume--buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #resumebtn {
+    background-color: #e91e63;
+    color: white;
+  }
+
+
+
+
+.pdf--wrapper{
+  width: 80%;
+  margin: auto;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .pdf--header {
+    text-align: center;
+    padding: 20px;
+    background-color: #2d1e23;
+    color: white;
+    border-radius: 10px 10px 0 0;
+  }
+  .pdf--body {
+    padding: 20px;
+  }
+  

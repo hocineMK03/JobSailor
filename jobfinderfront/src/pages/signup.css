@@ -1,0 +1,151 @@
+.signup--page{
+    
+    margin: auto 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(171, 34, 102, 0.5));
+    flex-direction: column;
+}
+.form{
+
+height: 80%;
+display: flex;
+flex-direction: row;
+gap: 0;
+
+min-width: 800px;
+justify-content: center;
+align-items: center;
+background-color: white;
+box-shadow: 2px 2px 0px rgba(0, 0, 0,0.3);
+padding: 10px;
+margin: 10px;
+border-radius: 5px;
+}
+.form--image{
+    display: flex;
+position: relative;
+min-width: 50%;
+min-height: 50%;
+
+border-radius: 10px;
+background-image: url('../../public/images/img-01.webp');
+background-repeat: no-repeat;
+background-size: contain;
+display: flex;
+justify-self: center;
+align-self: center;
+flex: 1;
+padding: 10px;
+
+}
+.form--form{
+    position: relative;
+    min-width: 50%;
+    
+    min-height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.progressbar{
+    width:400px;
+    display: flex;
+    height: 20px;
+    background-color: black;
+    
+    border-radius: 7px;
+}
+.progressbar div{
+    width: 33%;
+    height: 100%;
+    background-color: #E91E63;
+    border-radius: 7px;
+    transition: all 0.3s cubic-bezier(.23,.35,.82,.76);
+}
+
+.form--container{
+    position: relative;
+    min-width: 100%;
+    max-height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.form--header h1{
+    color: black;
+}
+.worker{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 20px;
+}
+
+.form--body{
+
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 20px;
+}
+.form--body input{
+padding: 10px;
+background-color: #f0f0f0;
+min-width: 80%;
+border-radius: 10px;
+text-align: start;
+border: none;
+outline: none;
+transition: all 0.2s ease-out;
+border: 1px solid transparent;
+}
+.form--body input:focus{
+    animation: animatedinput 1s cubic-bezier(.23,.35,.82,.76);
+    
+    
+}
+
+
+.form--buttons{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.form--buttons button{
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    outline: none;
+    height: 35px;
+    min-width: 30%;
+    cursor: pointer;
+    background: #E91E63;
+    border-radius: 5px;
+    
+}
+.form--buttons button:hover{
+    background: #c91a55;
+    transform: scale(105%);
+}
+
+@keyframes animatedinput{
+    to{
+        border: 1px solid #E91E63;
+        box-shadow: 0 0 30px rgba(233, 30, 99,0.8);
+    }
+}
+

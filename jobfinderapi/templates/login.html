@@ -1,0 +1,82 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form id="loginform" method="post" action="{%url 'log'%}">
+            {%csrf_token%}
+            <input type="text" name="name" placeholder="name">
+            <input type="password" name="password" placeholder="password">
+            <button type="submit">login</button>
+            <input type="text" id="responseinput" >
+        </form>
+        <script>
+    document.getElementById('loginform').addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent the default form submission
+                const csrfTokenInput = document.querySelector('[name="csrfmiddlewaretoken"]');
+
+    // Get the CSRF token value from the input element
+                const csrfToken = csrfTokenInput.value;
+                console.log(csrfTokenInput)
+                // Get form data
+                const formData = new FormData(this);
+               
+                // Convert form data to JSON object
+                const data=Object.fromEntries(formData)
+                const a=JSON.stringify(data)
+                var message
+                console.log("a",a)
+                // Send the form data to your Django backend using fetch
+                fetch('http://127.0.0.1:8000/api/authentification/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRFToken': csrfToken,
+                        // You can include other headers if needed, e.g., authentication token
+                    },
+                    body: JSON.stringify(data),
+                })
+                .then(response => {
+                   
+                        return response.json(); // Parse JSON data
+                    
+                })
+                .then(data => {
+                    // Handle the JSON data from the success response
+                    
+                    console.log('Response data:', data);
+                    console.log(data.message)
+                     if(data.type==1){
+                        
+                         accepted(data.message)
+                     }
+                     else{
+                         notaccepted(data.message)
+                     }
+                    // Update the UI or perform other actions based on the data
+                })
+                .catch(error => {
+                    
+                    // Handle network errors or other errors here
+                    console.error('Error:', error);
+                });
+            });
+            function accepted(res) {
+    const responseinput = document.getElementById("responseinput");
+    console.log("sent", res);
+    responseinput.innerText = res.toString();
+    console.log(responseinput.textContent.toString())
+}
+
+function notaccepted(res) {
+    const responseinput = document.getElementById("responseinput");
+    console.log("not sent");
+    responseinput.textContent = res;
+}
+
+        </script>
+    </body>
+    </html>

@@ -1,0 +1,18 @@
+react-dom.development.js:29840 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+App.js:18 /ResumeBuilder
+App.js:18 /ResumeBuilder
+resumemaker.js:44 here
+resumemaker.js:45 {name: 'hocine', name2: 'hocine', age: '50', email: 'hocine@gmaiL.com', adresse: 'hocine', …}
+resumemaker.js:52 (6) [Array(1), Array(1), Array(1), Array(1), Array(1), Array(1)]
+resumemaker.js:62 valid false
+resumemaker.js:68 valid1 true
+resumemaker.js:70 valid2 false
+resumemaker.js:73 hocine
+resumemaker.js:73 hocine
+resumemaker.js:73 50
+resumemaker.js:73 hocine@gmaiL.com
+resumemaker.js:73 hocine
+resumemaker.js:73 2020202020
+resumemaker.js:83 checkk true false
+resumemaker.js:96 valid true
+resumemaker.js:130 <input type="text" placeholder="name" name="name"/><input type="text" placeholder="name2" name="name2"/><input type="number" placeholder="age" name="age"/><input type="email" placeholder="email" name="email"/><input type="text" placeholder="adresse" name="adresse"/><input type="text" placeholder="number" name="number"/>

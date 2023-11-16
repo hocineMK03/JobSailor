@@ -1,0 +1,243 @@
+.secondnav{
+    width: 100%;
+    height: 20%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   position: relative;
+   padding: 10px;
+ }
+ .secondnav--wrapper{
+   position: absolute;
+   right: 0;
+   bottom: 0;
+     min-width: 25%;
+     max-width: 30%;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     padding: 10px;
+     background-color: #E91E63;
+     min-height: 25%;
+     border-top-left-radius: 10px;
+     border-bottom-left-radius: 10px;
+ }
+ .secondnav--wrapper a{
+    color: white;
+ }
+ .secondnav--wrapper a:hover .icn1{
+  transform: scale(105%);
+}
+ .secondnav--wrapper .icn1{
+    background: transparent;
+    width: 25px;
+    height: 25px;
+
+ }
+ .body--container {
+   width: 100%;
+   height: 100%;
+   display: grid; /* Change to grid layout */
+   grid-template-columns: 1fr 2fr 1fr; /* Define a 3-column grid with the middle column twice the size */
+   gap: 1rem;
+   padding: 10px;
+   margin-top: 20px;
+  
+ }
+ 
+ 
+ .left, .right {
+   width: 1fr;
+ }
+ 
+ .middle {
+   width: 2fr;
+   display: flex;
+ }
+
+ .middle .middle--body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  
+ }
+ .middle--body input{
+  padding: 20px;
+  background-color: #f0f0f0;
+  min-width: 80%;
+  border-radius: 10px;
+  text-align: start;
+  border: none;
+  outline: none;
+  transition: all 0.2s ease-out;
+  border: 1px solid transparent;
+  }
+  .resume--body.middle--body input:focus{
+      animation: animatedinput 1s cubic-bezier(.23,.35,.82,.76);
+      
+      
+  }
+ /* .left {
+   
+   
+   
+ } */
+ .left--wrapper{
+  box-shadow: 0 0 5px rgba(171, 34, 102, 0.5);
+ }
+ .left ul{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-height: 50%;
+  box-shadow: 0 0 5px rgba(171, 34, 102, 0.5);
+  padding: 20px;
+ }
+ .left ul li{
+  border: 1px solid #E91E63;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+
+ .left ul li:hover{
+  transform: scale(105%);
+ }
+ .middle {
+   padding: 20px;
+   
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   
+   color: black;
+ }
+ 
+ .middle .middle--posting {
+   display: flex;
+   flex-direction: column;
+   gap: 0;
+   background-color: #ffffff;
+   padding: 20px;
+  justify-content: center;
+  align-items: center;
+   border-radius: 5px;
+   box-shadow: 0 0 5px rgba(171, 34, 102, 0.5);
+ }
+ 
+
+ 
+ .middle--posting button {
+  width: 50%;
+   padding: 10px 20px;
+   background-color: #E91E63;
+   color: #fff;
+   border: none;
+   outline: none;
+   border-radius: 5px;
+   cursor: pointer;
+ }
+
+
+.middle--posting button:hover{
+      background: #c91a55;
+      transform: scale(105%);
+  
+  
+    }
+ .middle .posts {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   background-color: #ffffff;
+   padding: 20px;
+   margin-top: 30px;
+   border-radius: 5px;
+   box-shadow: 0 0 5px rgba(171, 34, 102, 0.5);
+   
+ }
+ .middle .posts:hover{
+  box-shadow: 0 0 10px rgba(171, 34, 102, 0.7);
+ }
+ a {
+   color: black;
+   text-decoration: none; /* Remove underlines from links */
+ }
+ 
+ .middle .posts--info span{
+   font-size: 0.7rem;
+   text-align: center;
+ }
+ .middle .posts--info{
+   display: flex;
+   gap: 1rem;
+   justify-content: flex-start;
+   align-items: center;
+ }
+ .middle .posts--apply{
+   width: 100%;
+   position: relative;
+   display: flex;
+   gap: 1rem;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .posts--info h1 {
+   font-size: 20px;
+   color: #333;
+ }
+ .posts--info h2 {
+   font-size: 12px;
+   color: #333;
+ }
+ .posts--body h2 {
+   font-size: 16px;
+   color: #555;
+ }
+ 
+ .posts--body p {
+   font-size: 14px;
+   color: #777;
+ }
+ .posts--apply span {
+   font-size: 14px;
+   color: #555;
+ }
+ 
+ .posts--apply button {
+   padding: 10px 20px;
+   background-color: #E91E63;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   width: 50%;
+ }
+    
+ .posts--apply button:hover{
+  background: #c91a55;
+    transform: scale(105%);
+ }
+ .button-chose{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+ }
+ 
+ .right {
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+   box-shadow: 0 0 5px rgba(171, 34, 102, 0.5);
+   height: 100%;
+   padding: 20px;
+ }
+
+ 
